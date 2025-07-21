@@ -1,20 +1,32 @@
+import ArgoCD from '@/components/technologies/ArgoCD';
+import Aurora from '@/components/technologies/Aurora';
 import AWS from '@/components/technologies/AWS';
-import BootStrap from '@/components/technologies/BootStrap';
-import Bun from '@/components/technologies/Bun';
-import CSS from '@/components/technologies/CSS';
-import ExpressJs from '@/components/technologies/ExpressJs';
-import Figma from '@/components/technologies/Figma';
-import Html from '@/components/technologies/Html';
+import Azure from '@/components/technologies/Azure';
+import Confluence from '@/components/technologies/Confluence';
+import Cuelang from '@/components/technologies/Cuelang';
+import Dart from '@/components/technologies/Dart';
+import DynamoDB from '@/components/technologies/DynamoDB';
+import Flutter from '@/components/technologies/Flutter';
+import GCP from '@/components/technologies/GCP';
+import Go from '@/components/technologies/Go';
+import Helm from '@/components/technologies/Helm';
+import HtmlIcon from '@/components/technologies/Html';
 import JavaScript from '@/components/technologies/JavaScript';
-import MongoDB from '@/components/technologies/MongoDB';
+import Kotlin from '@/components/technologies/Kotlin';
+import Kuberentes from '@/components/technologies/Kubernetes';
+import MySQL from '@/components/technologies/MySQL';
 import NextJs from '@/components/technologies/NextJs';
-import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Postman from '@/components/technologies/Postman';
-import Prisma from '@/components/technologies/Prisma';
-import ReactIcon from '@/components/technologies/ReactIcon';
+import Prometheus from '@/components/technologies/Prometheus';
+import Pulumi from '@/components/technologies/Pulumi';
+import Python from '@/components/technologies/Python';
+import Redis from '@/components/technologies/Redis';
+import Snowflake from '@/components/technologies/Snowflake';
+import Sumologic from '@/components/technologies/Sumologic';
+import Swift from '@/components/technologies/Swift';
+import TailwindCss from '@/components/technologies/TailwindCss';
+import Terraform from '@/components/technologies/Terraform';
 import TypeScript from '@/components/technologies/TypeScript';
-import Vercel from '@/components/technologies/Vercel';
 
 export interface Technology {
   name: string;
@@ -40,45 +52,130 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    isCurrent: false,
-    company: 'Prepeasy',
-    position: 'Founding Engineer',
-    location: 'Freelance',
-    image: '/company/prepeasy.png',
+    isCurrent: true,
+    company: 'CloudZero',
+    position: 'Software Engineer 2',
+    location: 'Boston, MA (Remote)',
+    image: '/company/cloudzero.png',
     description: [
-      'Independently architected and developed end-to-end full-stack solutions for core product features, resulting in 95% cost reduction in AI interview services.',
-      'Single-handedly engineered and deployed a scalable AI Interview Platform, implementing real-time leaderboard analytics and automated personalized interview feedback system, reducing per-session costs from *$7* to *$0.30*.',
-      'Designed and developed comprehensive AI Resume Builder with automated optimization features, increasing user engagement by generating tailored resume recommendations and industry-specific summaries.',
-      'Built and integrated an AI-powered Cover Letter Generator with customizable templates, improving user application success rates through personalized content generation.',
-      'Engineered a complete Learning Management System (LMS) with an integrated Quiz Platform, featuring progress tracking and performance analytics.',
+      'Architected and developed a scalable Kubernetes telemetry data pipeline to ingest Prometheus metrics from customer K8s clusters into our cost observability platform, enabling real-time infrastructure cost monitoring.',
+      'Led the design and implementation of a revolutionary collection-shipment paradigm with intelligent batching system, achieving an 80% reduction in operational cost overhead while maintaining data integrity.',
+      'Engineered full-stack solutions spanning Go-based Kubernetes agents, Helm chart deployments, and Python API services on AWS infrastructure, ensuring seamless integration across diverse customer environments.',
+      'Collaborated directly with engineering teams at Fortune 500 companies to iterate on product features and optimize telemetry collection, driving continuous improvement in platform performance and reliability.',
+      'Developed and maintained cloud-native monitoring solutions that transformed cost visibility for enterprise customers, enabling data-driven infrastructure optimization decisions.',
     ],
-    startDate: 'April 2025',
-    endDate: 'June 2025',
+    startDate: 'December 2024',
+    endDate: 'Present',
     technologies: [
       {
-        name: 'Next.js',
-        href: 'https://nextjs.org/',
-        icon: <NextJs />,
+        name: 'Golang',
+        href: 'https://go.dev/',
+        icon: <Go />,
       },
       {
-        name: 'Express',
-        href: 'https://expressjs.com/',
-        icon: <ExpressJs />,
+        name: 'Python',
+        href: 'https://www.python.org/',
+        icon: <Python />,
       },
       {
-        name: 'TypeScript',
-        href: 'https://www.typescriptlang.org/',
-        icon: <TypeScript />,
+        name: 'DynamoDB',
+        href: 'https://aws.amazon.com/dynamodb/',
+        icon: <DynamoDB />,
       },
       {
-        name: 'React',
-        href: 'https://react.dev/',
-        icon: <ReactIcon />,
+        name: 'Snowflake',
+        href: 'https://www.snowflake.com',
+        icon: <Snowflake />,
       },
       {
-        name: 'Prisma',
-        href: 'https://www.prisma.io/',
-        icon: <Prisma />,
+        name: 'AWS',
+        href: 'https://aws.amazon.com/',
+        icon: <AWS />,
+      },
+      {
+        name: 'GCP',
+        href: 'https://cloud.google.com',
+        icon: <GCP />,
+      },
+      {
+        name: 'Azure',
+        href: 'https://azure.microsoft.com/en-us/',
+        icon: <Azure />,
+      },
+      {
+        name: 'Kubernetes',
+        href: 'https://kubernetes.io/',
+        icon: <Kuberentes />,
+      },
+      {
+        name: 'Helm',
+        href: 'https://helm.sh/',
+        icon: <Helm />,
+      },
+      {
+        name: 'Sumologic',
+        href: 'https://www.sumologic.com/',
+        icon: <Sumologic />,
+      },
+      {
+        name: 'Prometheus',
+        href: 'https://prometheus.io/',
+        icon: <Prometheus />,
+      },
+      {
+        name: 'Pulumi',
+        href: 'https://www.pulumi.com/',
+        icon: <Pulumi />,
+      },
+      {
+        name: 'Confluence',
+        href: 'https://www.atlassian.com/software/confluence',
+        icon: <Confluence />,
+      },
+    ],
+    website: 'https://www.cloudzero.com/',
+    github: 'https://github.com/jake-cloudzero',
+  },
+  {
+    isCurrent: false,
+    company: 'New Relic',
+    position: 'Software Engineer 1',
+    location: 'Portland, OR',
+    image: '/company/newrelic.png',
+    description: [
+      'Designed and implemented a fully managed Database-as-a-Service (DBaaS) platform on AWS EKS, leveraging custom Kubernetes operators for automated provisioning, scaling, and self-healing of database clusters.',
+      'Developed a GitOps-driven manifest state management solution using CUELang, enabling declarative configuration, drift detection, and zero-downtime rollouts for database infrastructure.',
+      'Enhanced existing data ingestion pipelines by optimizing throughput and fault tolerance, reducing end-to-end data processing latency by 40% and improving reliability under peak load.',
+      'Authored and maintained reusable Terraform modules and internal templates for database infrastructure, standardizing deployments across multiple environments and accelerating developer onboarding.',
+      'Collaborated with cross-functional teams to define DBaaS SLAs and performance benchmarks, implementing monitoring, alerting, and auto-remediation workflows that achieved 99.9% availability.',
+    ],
+    startDate: 'May 2023',
+    endDate: 'December 2024',
+    technologies: [
+      {
+        name: 'Golang',
+        href: 'https://go.dev/',
+        icon: <Go />,
+      },
+      {
+        name: 'Cuelang',
+        href: 'https://cuelang.org/',
+        icon: <Cuelang />,
+      },
+      {
+        name: 'AWS',
+        href: 'https://aws.amazon.com/',
+        icon: <AWS />,
+      },
+      {
+        name: 'Kubernetes',
+        href: 'https://kubernetes.io/',
+        icon: <Kuberentes />,
+      },
+      {
+        name: 'Helm',
+        href: 'https://helm.sh/',
+        icon: <Helm />,
       },
       {
         name: 'PostgreSQL',
@@ -86,9 +183,84 @@ export const experiences: Experience[] = [
         icon: <PostgreSQL />,
       },
       {
-        name: 'Vercel',
-        href: 'https://vercel.com/',
-        icon: <Vercel />,
+        name: 'MySQL',
+        href: 'https://www.mysql.com/',
+        icon: <MySQL />,
+      },
+      {
+        name: 'Redis',
+        href: 'https://redis.io/',
+        icon: <Redis />,
+      },
+      {
+        name: 'AWS Aurora',
+        href: 'https://aws.amazon.com/rds/aurora/',
+        icon: <Aurora />,
+      },
+      {
+        name: 'Terraform',
+        href: 'https://developer.hashicorp.com/terraform',
+        icon: <Terraform />,
+      },
+      {
+        name: 'ArgoCD',
+        href: 'https://argo-cd.readthedocs.io/en/stable/',
+        icon: <ArgoCD />,
+      },
+      {
+        name: 'Confluence',
+        href: 'https://www.atlassian.com/software/confluence',
+        icon: <Confluence />,
+      },
+    ],
+    website: 'https://newrelic.com',
+  },
+  {
+    isCurrent: true,
+    company: 'Sapphire NW',
+    position: 'Business Development',
+    location: 'Portland, OR',
+    image: '/company/sapphirenw.svg',
+    description: [
+      'Founded and led Sapphire Consulting, a Portland-based firm specializing in end-to-end AI and full-stack application development for small and mid-sized businesses, driving digital transformation and innovation across diverse industries.',
+      'Architected and delivered Workout Notepad, a cross-platform iOS/Android mobile app featuring industry-leading exercise visualizations.',
+      'Designed and built a custom LLM-powered AI Platform in beta, enabling seamless integration of chatbots, knowledge-base search, and automated content generation for multiple clients, accelerating time-to-market by 50%.',
+      'Developed Crosscheck Sports, a tailored scheduling and roster management app for local sports teams, improving event coordination efficiency by 60% and reducing administrative overhead.',
+      'Engineered robust web hosting and site maintenance solutions, achieving 99.9% uptime for clients such as ETSI and CheetahLearning.com over a 15-year partnership, with rapid incident response and proactive performance tuning.',
+    ],
+    startDate: 'January 2020',
+    endDate: 'Present',
+    website: 'https://sapphirenw.com',
+    technologies: [
+      {
+        name: 'Flutter',
+        href: 'https://flutter.dev/',
+        icon: <Flutter />,
+      },
+      {
+        name: 'Swift UI',
+        href: 'https://www.swift.org/',
+        icon: <Swift />,
+      },
+      {
+        name: 'Dart',
+        href: 'https://dart.dev/',
+        icon: <Dart />,
+      },
+      {
+        name: 'Kotlin',
+        href: 'https://kotlinlang.org/',
+        icon: <Kotlin />,
+      },
+      {
+        name: 'Golang',
+        href: 'https://go.dev/',
+        icon: <Go />,
+      },
+      {
+        name: 'Python',
+        href: 'https://www.python.org/',
+        icon: <Python />,
       },
       {
         name: 'AWS',
@@ -96,154 +268,41 @@ export const experiences: Experience[] = [
         icon: <AWS />,
       },
       {
-        name: 'Postman',
-        href: 'https://www.postman.com/',
-        icon: <Postman />,
+        name: 'PostgreSQL',
+        href: 'https://www.postgresql.org/',
+        icon: <PostgreSQL />,
       },
       {
-        name: 'Bun',
-        href: 'https://bun.sh/',
-        icon: <Bun />,
-      },
-    ],
-    website: 'https://prepeasy.ai',
-    github: 'https://github.com/prepeasy',
-  },
-  {
-    isCurrent: false,
-    company: 'Expelee',
-    position: 'SDE-1 (Full Stack) Intern',
-    location: 'Dubai, UAE (Remote)',
-    image: '/company/expelee.png',
-    description: [
-      '*Riskmitra (riskmitra.com)*: Built full-stack product with Next.js, Tailwind CSS, Framer Motion, shadcn, wallet integration, and GitBook integration.',
-      '*Core AI (core-ai.me)*: Designed and developed with Next.js, Tailwind CSS, Framer Motion, shadcn, focusing on scalability and modular UI design.',
-      '*GPU AI (gpuai.me)*: Integrated Three.js for interactive 3D elements alongside full-stack features from Core AI setup.',
-      '*Altranium (gaming.altranium.com)*: Developed immersive gaming platform using Three.js, MERN, Tailwind, and Framer Motion.',
-      '*Pars Network (parsnetwork.me)*: Engineered landing experience with MERN, Tailwind CSS, and GSAP for advanced animations and transitions.',
-      '*TEQ Network (teq-network.vercel.app)*: Designed and developed landing page using MERN, Tailwind CSS, and Web3 wallet integration.',
-    ],
-    startDate: 'Aug 2023',
-    endDate: 'April 2025',
-    technologies: [
-      {
-        name: 'Bun',
-        href: 'https://bun.sh/',
-        icon: <Bun />,
+        name: 'DynamoDB',
+        href: 'https://aws.amazon.com/dynamodb/',
+        icon: <DynamoDB />,
       },
       {
-        name: 'Express',
-        href: 'https://expressjs.com/',
-        icon: <ExpressJs />,
+        name: 'HTML',
+        href: 'https://en.wikipedia.org/wiki/HTML',
+        icon: <HtmlIcon />,
       },
       {
-        name: 'Figma',
-        href: 'https://figma.com/',
-        icon: <Figma />,
-      },
-      {
-        name: 'JavaScript',
-        href: 'https://javascript.com/',
+        name: 'Javascript',
+        href: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
         icon: <JavaScript />,
       },
       {
-        name: 'MongoDB',
-        href: 'https://mongodb.com/',
-        icon: <MongoDB />,
+        name: 'Typescript',
+        href: 'https://www.typescriptlang.org/',
+        icon: <TypeScript />,
       },
       {
-        name: 'Next.js',
+        name: 'Next JS',
         href: 'https://nextjs.org/',
         icon: <NextJs />,
       },
       {
-        name: 'Node.js',
-        href: 'https://nodejs.org/',
-        icon: <NodeJs />,
-      },
-      {
-        name: 'PostgreSQL',
-        href: 'https://postgresql.org/',
-        icon: <PostgreSQL />,
-      },
-      {
-        name: 'Prisma',
-        href: 'https://prisma.io/',
-        icon: <Prisma />,
-      },
-      {
-        name: 'React',
-        href: 'https://react.dev/',
-        icon: <ReactIcon />,
-      },
-      {
-        name: 'TypeScript',
-        href: 'https://typescriptlang.org/',
-        icon: <TypeScript />,
-      },
-      {
-        name: 'Postman',
-        href: 'https://postman.com/',
-        icon: <Postman />,
-      },
-      {
-        name: 'Vercel',
-        href: 'https://vercel.com/',
-        icon: <Vercel />,
-      },
-      {
-        name: 'AWS',
-        href: 'https://aws.amazon.com/',
-        icon: <AWS />,
+        name: 'Tailwind',
+        href: 'https://tailwindcss.com/',
+        icon: <TailwindCss />,
       },
     ],
-    website: 'https://expelee.com',
-    x: 'https://x.com/0xExpelee',
-    linkedin: 'https://www.linkedin.com/company/expelee',
-    github: 'https://github.com/expeleeOfficial',
-  },
-  {
-    isCurrent: false,
-    company: 'Flameloop',
-    position: 'Junior Frontend Developer',
-    location: 'Indore, India (offline)',
-    image: '/company/loop.png',
-    description: [
-      'Developed and maintained web applications using HTML, CSS, and JavaScript.',
-      'Collaborated with cross-functional teams to deliver high-quality software on time.',
-      'Design & Developed multiple websites for clients.',
-    ],
-    startDate: 'June 2023',
-    endDate: 'July 2023',
-    website: 'https://flameloop.com',
-    technologies: [
-      {
-        name: 'HTML',
-        href: 'https://html.com/',
-        icon: <Html />,
-      },
-      {
-        name: 'CSS',
-        href: 'https://css.com/',
-        icon: <CSS />,
-      },
-      {
-        name: 'JavaScript',
-        href: 'https://javascript.com/',
-        icon: <JavaScript />,
-      },
-      {
-        name: 'Figma',
-        href: 'https://figma.com/',
-        icon: <Figma />,
-      },
-      {
-        name: 'BootStrap',
-        href: 'https://getbootstrap.com/',
-        icon: <BootStrap />,
-      },
-    ],
-    x: 'https://x.com/Flameloop149578',
-    linkedin: 'https://www.linkedin.com/company/flameloop',
+    linkedin: 'https://www.linkedin.com/company/sapphirenw',
   },
 ];

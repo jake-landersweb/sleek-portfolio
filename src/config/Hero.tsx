@@ -29,6 +29,9 @@ import Mail from '@/components/svgs/Mail';
 import X from '@/components/svgs/X';
 import Bun from '@/components/technologies/Bun';
 import JavaScript from '@/components/technologies/JavaScript';
+import Kubernetes from '@/components/technologies/Kubernetes';
+import Flutter from '@/components/technologies/Flutter';
+import AWS from '@/components/technologies/AWS';
 import MongoDB from '@/components/technologies/MongoDB';
 import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
@@ -49,47 +52,45 @@ export const skillComponents = {
   MongoDB: MongoDB,
   Prisma: Prisma,
   JavaScript: JavaScript,
+  Kubernetes: Kubernetes,
+  Flutter: Flutter,
+  AWS: AWS,
 };
 
 export const heroConfig = {
   // Personal Information
-  name: 'Ram',
-  title: 'A Full Stack web developer.',
+  name: 'Jake',
+  title: 'A true full-stack developer',
   avatar: '/assets/logo.png',
 
   // Skills Configuration
   skills: [
     {
-      name: 'Typescript',
-      href: 'https://www.typescriptlang.org/',
-      component: 'TypeScript',
-    },
-    {
-      name: 'React',
-      href: 'https://react.dev/',
-      component: 'ReactIcon',
-    },
-    {
-      name: 'Next.js',
-      href: 'https://nextjs.org/',
-      component: 'NextJs',
-    },
-    {
-      name: 'Bun',
-      href: 'https://bun.sh/',
-      component: 'Bun',
+      name: 'Kubernetes',
+      href: 'https://kubernetes.io/',
+      component: 'Kubernetes',
     },
     {
       name: 'PostgreSQL',
       href: 'https://www.postgresql.org/',
       component: 'PostgreSQL',
     },
+    {
+      name: 'Flutter',
+      href: 'https://flutter.dev/',
+      component: 'Flutter',
+    },
+    {
+      name: 'React / Next.js',
+      href: 'https://nextjs.org/',
+      component: 'NextJs',
+    },
   ],
 
   // Description Configuration
   description: {
     template:
-      'I build interactive web apps using {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. With a focus on <b>UI</b> design. Enthusiastic about <b>Three.js</b>, driven by a keen eye for design.',
+      'With my expertise covering all paradigms of development: {skills:0} {skills:1} {skills:2} {skills:3} + more, I turn<b>ideas</b>into<b>reality</b>.',
   },
 
   // Buttons Configuration
@@ -113,22 +114,22 @@ export const heroConfig = {
 export const socialLinks = [
   {
     name: 'X',
-    href: 'https://x.com/ramxcodes',
+    href: 'https://x.com/jakerlanders',
     icon: <X />,
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ramxcodes/',
+    href: 'www.linkedin.com/in/jakerlanders',
     icon: <LinkedIn />,
   },
   {
     name: 'Github',
-    href: 'https://github.com/ramxcodes',
+    href: 'https://github.com/jake-landersweb',
     icon: <Github />,
   },
   {
     name: 'Email',
-    href: 'mailto:ramxcodes@gmail.com',
+    href: 'mailto:me@jakelanders.com',
     icon: <Mail />,
   },
 ];

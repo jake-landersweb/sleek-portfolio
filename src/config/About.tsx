@@ -1,26 +1,26 @@
-import Bun from '@/components/technologies/Bun';
-import JavaScript from '@/components/technologies/JavaScript';
-import MongoDB from '@/components/technologies/MongoDB';
+import AWS from '@/components/technologies/AWS';
+import Flutter from '@/components/technologies/Flutter';
+import Go from '@/components/technologies/Go';
+import Kuberentes from '@/components/technologies/Kubernetes';
 import NextJs from '@/components/technologies/NextJs';
-import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
+import Swift from '@/components/technologies/Swift';
 import TypeScript from '@/components/technologies/TypeScript';
 
 export const mySkills = [
   <ReactIcon key="react" />,
-  <Bun key="bun" />,
-  <JavaScript key="javascript" />,
   <TypeScript key="typescript" />,
-  <MongoDB key="mongodb" />,
   <NextJs key="nextjs" />,
-  <NodeJs key="nodejs" />,
   <PostgreSQL key="postgresql" />,
-  <Prisma key="prisma" />,
+  <Flutter key="flutter" />,
+  <Swift key="swift" />,
+  <Go key="go" />,
+  <Kuberentes key="kubernetes" />,
+  <AWS key="aws" />,
 ];
 
 export const about = {
-  name: 'Ramkrishna Swarnkar',
-  description: `I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's.`,
+  name: 'Jake Landers',
+  description: `I'm a true full-stack developer with real-world experience building software for every part of the cloud. Backend, frontend, dev-ops, networking, infrastructure, databases, APIs, serverless, and more.`,
 };

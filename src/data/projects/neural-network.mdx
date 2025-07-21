@@ -1,0 +1,41 @@
+---
+title: 'Neural Network from Scratch in Python'
+description: 'This is an experiment in implementing a dense neural network completely in Dart without the aid of any packages, computational or otherwise.'
+image: '/project/nn.png'
+technologies: ['Flutter', 'Dart']
+github: 'https://github.com/jake-landersweb/neural_network'
+live: 'https://nn.jakelanders.com'
+timeline: '2 weeks'
+role: 'Engineer'
+team: 'Solo'
+status: 'Completed'
+featured: true
+challenges: ['Math', 'Implementation']
+learnings: ['Vector Calculus', 'Back-propagation', 'Flutter Web']
+isPublished: true
+---
+
+## Overview
+
+This is an experiment in implementing a dense neural network completely in Dart without the aid of any packages, computational or otherwise. This demo currently shows that this network is able to learn on the Mnist hand-written digit dataset, and can predict inputted digits with ~87% accuracy. The model does have some significant drawbacks, the digits are expected to be relatively in the center. When they are not, the model accuracy drops off significantly. But overall, the model does a good job at guessing the digits you pass it.
+
+## Key Features
+
+The following components have been implemented:
+
+Activation Functions:
+- ReLU
+- Sigmoid
+- Softmax
+- Layers
+- Dense
+
+Loss Functions:
+- Binary Crossentropy
+- Categorical Crossentropy
+
+Optimizers:
+- Ada Grad
+- Adam
+- RMS Prop
+- SGD

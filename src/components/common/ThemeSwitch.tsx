@@ -41,8 +41,8 @@ export default function ThemeSwitch({ className }: ThemeSwitchProps) {
         z-index: 9999;
         pointer-events: none;
         background: ${backgroundColor};
-        clip-path: circle(0px at ${x}px ${y}px);
-        transition: clip-path 500ms cubic-bezier(0.4, 0, 0.2, 1);
+        clipPath: circle(0px at ${x}px ${y}px);
+        transition: clipPath 500ms cubic-bezier(0.4, 0, 0.2, 1);
       `;
       document.body.appendChild(transition);
       requestAnimationFrame(() => {
@@ -71,18 +71,16 @@ export default function ThemeSwitch({ className }: ThemeSwitchProps) {
       aria-label="Toggle theme"
     >
       <Sun
-        className={`absolute h-5 w-5 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
-          resolvedTheme === 'dark'
+        className={`absolute h-5 w-5 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${resolvedTheme === 'dark'
             ? 'translate-y-0 scale-100 opacity-100'
             : 'translate-y-5 scale-50 opacity-0'
-        }`}
+          }`}
       />
       <Moon
-        className={`absolute h-5 w-5 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
-          resolvedTheme === 'light'
+        className={`absolute h-5 w-5 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${resolvedTheme === 'light'
             ? 'translate-y-0 scale-100 opacity-100'
             : 'translate-y-5 scale-50 opacity-0'
-        }`}
+          }`}
       />
     </button>
   );

@@ -1,4 +1,4 @@
-export default function Html() {
+export default function HtmlIcon() {
   return (
     <svg viewBox="0 0 128 128">
       <path
