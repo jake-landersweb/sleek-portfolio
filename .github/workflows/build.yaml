@@ -38,4 +38,4 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/jakelanders.com-sleek:${{ steps.tag.outputs.tag }}
+          tags: ghcr.io/jakelanders-com-sleek:${{ steps.tag.outputs.tag }}
