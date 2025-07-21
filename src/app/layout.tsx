@@ -8,6 +8,8 @@ import UmamiAnalytics from '@/components/analytics/UmamiAnalytics';
 import Providers from '@/components/common/Providers';
 import './globals.css';
 
+export const dynamic = "force-dynamic";
+
 export const metadata = getMetadata('/');
 
 export default function RootLayout({

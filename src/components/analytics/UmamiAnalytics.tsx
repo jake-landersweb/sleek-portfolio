@@ -1,7 +1,5 @@
 import Script from 'next/script'
 
-export const dynamic = "force-dynamic";
-
 export default function UmamiAnalytics() {
   const umamiSrc = process.env.NEXT_PUBLIC_UMAMI_SRC
   const umamiId = process.env.NEXT_PUBLIC_UMAMI_ID
